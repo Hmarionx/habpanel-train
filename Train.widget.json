@@ -1,0 +1,23 @@
+{
+    "name": "Train",
+    "settings": [
+        {
+            "type": "item",
+            "id": "destination",
+            "label": "Destination"
+        },
+        {
+            "type": "item",
+            "id": "type",
+            "label": "Type"
+        },
+        {
+            "type": "item",
+            "id": "heure",
+            "label": "Heure"
+        }
+    ],
+    "template": "<table class=\"table\">\n  <span><strong>Prochain départ gare de Chamelet</strong></span>\n  <br></br>\n  <tr>\n    <td class=\"text-left\">Destination :</td>\n    <td><strong>{{itemValue(config.destination).split('(')[0]}}</strong></td>\n    <td class=\"text-right\">Heure :</td>\n    <td><strong>{{itemValue(config.heure) | date:'HH:mm'}}</strong></td>\n  </tr>\n</table>\n",
+    "author": "Hervé Marion",
+    "description": "Liste d'item / value"
+}
